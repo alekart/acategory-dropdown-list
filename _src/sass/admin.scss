@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
+.button-primary {
+  &reset {
+    float: right;
+    @include gradient-vertical(#BA032E, #8C0002);
+    &:hover {
+      @include gradient-vertical(#D30434, #8C0002);
+    }
+    &.disabled {
+      background-color: #8C0002;
+      background-image: none;
+      border-color: #800;
+      color: rgba(255, 255, 255, .5);
+      cursor: default;
+    }
+  }
+}
+
+.options-column {
+  width: 290px;
+  div.first {
+    margin-bottom: 4px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #CCC
+  }
+}
+
+.label-column label {
+  display: block;
+  height: 40px;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
